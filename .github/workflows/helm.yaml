@@ -69,5 +69,7 @@ jobs:
           CR_SKIP_EXISTING: "false"
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           CR_RELEASE_NAME_TEMPLATE: "helm-chart-{{ .Version }}"
+          CR_RELEASE_NOTES_FILE: "CHANGELOG.md"
+
         with:
           charts_dir: charts
